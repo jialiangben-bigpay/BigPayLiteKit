@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="fc1-82-1nG">
             <objects>
-                <viewController storyboardIdentifier="VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VUh-sQ-KZ7" customClass="ViewController" customModule="LiteSdkSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VUh-sQ-KZ7" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DSB-gT-xr2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
