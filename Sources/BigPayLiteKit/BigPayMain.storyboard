@@ -123,11 +123,12 @@
                     <navigationItem key="navigationItem" id="7Y6-ir-aqb"/>
                     <connections>
                         <outlet property="balanceAmount" destination="G8V-Hg-Y11" id="v6a-zy-0g1"/>
+                        <outlet property="settingIcon" destination="Jrq-b2-uEc" id="vZF-Ek-Dz6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITB-BW-DZd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-673"/>
+            <point key="canvasLocation" x="725.95419847328242" y="-673.23943661971839"/>
         </scene>
     </scenes>
     <resources>
