@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VUh-sQ-KZ7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -49,13 +50,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BigPay Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-rf-BCz">
-                                        <rect key="frame" x="44" y="18" width="99" height="16.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="14"/>
+                                        <rect key="frame" x="44" y="18" width="90" height="16.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-ED-ude">
-                                        <rect key="frame" x="143" y="20" width="16" height="12.333333333333329"/>
+                                        <rect key="frame" x="134" y="20" width="16" height="12.333333333333329"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="c8z-Dr-dCC"/>
@@ -121,7 +122,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Y6-ir-aqb"/>
                     <connections>
+                        <outlet property="amountLbl" destination="G8V-Hg-Y11" id="uHQ-1t-uR8"/>
                         <outlet property="balanceAmount" destination="G8V-Hg-Y11" id="v6a-zy-0g1"/>
+                        <outlet property="bigpayBalanceLbl" destination="meQ-rf-BCz" id="TxX-2h-n7e"/>
+                        <outlet property="currencyLbl" destination="PU6-8R-v1x" id="MyX-Fu-Acb"/>
                         <outlet property="settingIcon" destination="Jrq-b2-uEc" id="vZF-Ek-Dz6"/>
                     </connections>
                 </viewController>

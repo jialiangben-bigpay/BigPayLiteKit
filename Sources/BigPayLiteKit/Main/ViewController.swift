@@ -13,15 +13,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var settingIcon: UIImageView!
     
+    @IBOutlet weak var bigpayBalanceLbl: UILabel!
+    @IBOutlet weak var currencyLbl: UILabel!
+    @IBOutlet weak var amountLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         balanceAmount.text = Greeting().getUserProfile().amount
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        settingIcon.isUserInteractionEnabled = true
-        settingIcon.addGestureRecognizer(tapGestureRecognizer)
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +33,18 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    func setupUI() {
+        bigpayBalanceLbl.font = BigPayFont.font(type: .Regular, size: 20)
+        
+        currencyLbl.font = BigPayFont.font(type: .Regular, size: 16)
+        
+        amountLbl.font = BigPayFont.font(type: .SemiBold, size: 36)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        settingIcon.isUserInteractionEnabled = true
+        settingIcon.addGestureRecognizer(tapGestureRecognizer)
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
