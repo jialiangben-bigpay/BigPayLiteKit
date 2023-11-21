@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        balanceAmount.text = Greeting().getUserProfile().amount
+        balanceAmount.text = UserProfile().getUserProfile().amount
         
         setupUI()
     }

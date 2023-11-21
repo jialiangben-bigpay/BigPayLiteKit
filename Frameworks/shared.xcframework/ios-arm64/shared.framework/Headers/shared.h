@@ -149,7 +149,6 @@ __attribute__((swift_name("Greeting")))
 @interface SharedGreeting : SharedBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (SharedUserProfileModel *)getUserProfile __attribute__((swift_name("getUserProfile()")));
 - (NSString *)greet __attribute__((swift_name("greet()")));
 @end
 
@@ -168,10 +167,18 @@ __attribute__((swift_name("IOSPlatform")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("UserProfile")))
+@interface SharedUserProfile : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (SharedUserProfileModel *)getUserProfile __attribute__((swift_name("getUserProfile()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UserProfileModel")))
 @interface SharedUserProfileModel : SharedBase
-- (instancetype)initWithId:(int32_t)id userName:(NSString * _Nullable)userName title:(NSString * _Nullable)title fullName:(NSString * _Nullable)fullName amount:(NSString * _Nullable)amount __attribute__((swift_name("init(id:userName:title:fullName:amount:)"))) __attribute__((objc_designated_initializer));
-- (SharedUserProfileModel *)doCopyId:(int32_t)id userName:(NSString * _Nullable)userName title:(NSString * _Nullable)title fullName:(NSString * _Nullable)fullName amount:(NSString * _Nullable)amount __attribute__((swift_name("doCopy(id:userName:title:fullName:amount:)")));
+- (instancetype)initWithId:(int32_t)id title:(NSString * _Nullable)title fullName:(NSString * _Nullable)fullName amount:(NSString * _Nullable)amount __attribute__((swift_name("init(id:title:fullName:amount:)"))) __attribute__((objc_designated_initializer));
+- (SharedUserProfileModel *)doCopyId:(int32_t)id title:(NSString * _Nullable)title fullName:(NSString * _Nullable)fullName amount:(NSString * _Nullable)amount __attribute__((swift_name("doCopy(id:title:fullName:amount:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -179,7 +186,6 @@ __attribute__((swift_name("UserProfileModel")))
 @property NSString * _Nullable fullName __attribute__((swift_name("fullName")));
 @property int32_t id __attribute__((swift_name("id")));
 @property NSString * _Nullable title __attribute__((swift_name("title")));
-@property NSString * _Nullable userName __attribute__((swift_name("userName")));
 @end
 
 __attribute__((objc_subclassing_restricted))
