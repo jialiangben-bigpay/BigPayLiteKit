@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct BigPayFont {
-    enum FontType: String {
+    enum FontType: String,CaseIterable {
         case Bold = "Jost-Bold"
         case Regular = "Jost-Regular"
         case Mediym = "Jost-Medium"
