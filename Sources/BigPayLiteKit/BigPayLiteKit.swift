@@ -4,7 +4,7 @@ import UIKit
 
 public class BigPayLiteKit {
     public static func registerAllFonts() {
-        for font in BigPayFont.FontType.all {
+        for font in BigPayFont.FontType.allCases {
             do {
                 try self.registerFont(named: font.rawValue)
                // Handle the result
