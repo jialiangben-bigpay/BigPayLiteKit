@@ -20,13 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "BigPayLiteKit",
-            dependencies: []),
-        .target(
-            name: "Shared",
-            resources: [
-              .process("Resources/Media.xcassets"),
-            ]
-          ),
+            dependencies: [],
+            resources: [.process("Media.xcassets")]),
         .binaryTarget(name: "shared", path: "Frameworks/shared.xcframework"),
     ]
 )
