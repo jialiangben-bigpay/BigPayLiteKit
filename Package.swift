@@ -21,6 +21,12 @@ let package = Package(
         .target(
             name: "BigPayLiteKit",
             dependencies: []),
+        .target(
+            name: "Shared",
+            resources: [
+              .process("Resources/Media.xcassets"),
+            ]
+          ),
         .binaryTarget(name: "shared", path: "Frameworks/shared.xcframework"),
     ]
 )
