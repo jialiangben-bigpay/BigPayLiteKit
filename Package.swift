@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "BigPayLiteKit",
-            targets: ["BigPayLiteKit","App","Flutter"]),
+            targets: ["BigPayLiteKit","shared"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,7 +21,6 @@ let package = Package(
         .target(
             name: "BigPayLiteKit",
             dependencies: []),
-        .binaryTarget(name: "App", path: "Frameworks/App.xcframework"),
-        .binaryTarget(name: "Flutter", path: "Frameworks/Flutter.xcframework")
+        .binaryTarget(name: "shared", path: "Frameworks/shared.xcframework"),
     ]
 )

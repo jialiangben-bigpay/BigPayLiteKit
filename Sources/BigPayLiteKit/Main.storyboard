@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+        <array key="Jost-SemiBold.ttf">
+            <string>Jost-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fc1-82-1nG">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VUh-sQ-KZ7" customClass="ViewController" customModule="LiteSdkSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DSB-gT-xr2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gearshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jrq-b2-uEc">
+                                <rect key="frame" x="20" y="75.333333333333329" width="24" height="23.666666666666671"/>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="10q-yf-j41"/>
+                                    <constraint firstAttribute="height" constant="24" id="VZa-Cl-YFJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigPayLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-2K-Qub">
+                                <rect key="frame" x="157.66666666666666" y="67" width="78" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="PQF-wl-GVH"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2DC-XD-RaR">
+                                <rect key="frame" x="12" y="135" width="369" height="82"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IcNewCard" translatesAutoresizingMaskIntoConstraints="NO" id="4rD-y5-0Xz">
+                                        <rect key="frame" x="16" y="16" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="0SQ-7m-w7F"/>
+                                            <constraint firstAttribute="height" constant="20" id="gqo-Hp-nso"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BigPay Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-rf-BCz">
+                                        <rect key="frame" x="44" y="18" width="99" height="16.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eeI-ED-ude">
+                                        <rect key="frame" x="143" y="20" width="16" height="12.333333333333329"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="c8z-Dr-dCC"/>
+                                            <constraint firstAttribute="width" constant="16" id="pfD-Fw-NWf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU6-8R-v1x">
+                                        <rect key="frame" x="16" y="50.666666666666657" width="25" height="18.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8V-Hg-Y11">
+                                        <rect key="frame" x="41" y="39.333333333333343" width="54.666666666666657" height="32.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Jost-SemiBold" family="Jost" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IcPlus" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-er-GGI">
+                                        <rect key="frame" x="103.66666666666667" y="43.666666666666657" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="His-RG-JIi"/>
+                                            <constraint firstAttribute="width" constant="24" id="Wv7-Bt-F7z"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="PrimaryColor70"/>
+                                <constraints>
+                                    <constraint firstItem="4rD-y5-0Xz" firstAttribute="leading" secondItem="2DC-XD-RaR" secondAttribute="leading" constant="16" id="1Kk-VQ-WaT"/>
+                                    <constraint firstItem="eeI-ED-ude" firstAttribute="centerY" secondItem="meQ-rf-BCz" secondAttribute="centerY" id="3nF-Je-DZo"/>
+                                    <constraint firstItem="meQ-rf-BCz" firstAttribute="centerY" secondItem="4rD-y5-0Xz" secondAttribute="centerY" id="4ke-fG-upQ"/>
+                                    <constraint firstItem="G8V-Hg-Y11" firstAttribute="top" secondItem="meQ-rf-BCz" secondAttribute="bottom" constant="5" id="8Jv-C4-NvK"/>
+                                    <constraint firstItem="1b7-er-GGI" firstAttribute="centerY" secondItem="G8V-Hg-Y11" secondAttribute="centerY" id="B96-Hi-BQv"/>
+                                    <constraint firstItem="eeI-ED-ude" firstAttribute="leading" secondItem="meQ-rf-BCz" secondAttribute="trailing" id="BB6-YN-G8J"/>
+                                    <constraint firstItem="meQ-rf-BCz" firstAttribute="leading" secondItem="4rD-y5-0Xz" secondAttribute="trailing" constant="8" id="IVq-r1-vVF"/>
+                                    <constraint firstItem="G8V-Hg-Y11" firstAttribute="leading" secondItem="PU6-8R-v1x" secondAttribute="trailing" id="Rlb-ve-DnA"/>
+                                    <constraint firstItem="G8V-Hg-Y11" firstAttribute="firstBaseline" secondItem="PU6-8R-v1x" secondAttribute="firstBaseline" id="WSc-xI-wI5"/>
+                                    <constraint firstItem="PU6-8R-v1x" firstAttribute="leading" secondItem="4rD-y5-0Xz" secondAttribute="leading" id="Zmt-Ga-2Ja"/>
+                                    <constraint firstItem="4rD-y5-0Xz" firstAttribute="top" secondItem="2DC-XD-RaR" secondAttribute="top" constant="16" id="emR-LT-ZI4"/>
+                                    <constraint firstAttribute="bottom" secondItem="G8V-Hg-Y11" secondAttribute="bottom" constant="10" id="mwY-EN-SSA"/>
+                                    <constraint firstItem="1b7-er-GGI" firstAttribute="leading" secondItem="G8V-Hg-Y11" secondAttribute="trailing" constant="8" id="sVe-Me-HRF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N6m-Db-Y3J"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N6m-Db-Y3J" firstAttribute="trailing" secondItem="2DC-XD-RaR" secondAttribute="trailing" constant="12" id="Er9-WQ-BoC"/>
+                            <constraint firstItem="Jrq-b2-uEc" firstAttribute="leading" secondItem="N6m-Db-Y3J" secondAttribute="leading" constant="20" id="FHw-oz-DaT"/>
+                            <constraint firstItem="2DC-XD-RaR" firstAttribute="top" secondItem="dW8-2K-Qub" secondAttribute="bottom" constant="28" id="J3D-la-eyz"/>
+                            <constraint firstItem="2DC-XD-RaR" firstAttribute="centerX" secondItem="N6m-Db-Y3J" secondAttribute="centerX" id="M4V-dk-nxZ"/>
+                            <constraint firstItem="dW8-2K-Qub" firstAttribute="centerY" secondItem="Jrq-b2-uEc" secondAttribute="centerY" id="Xyp-tW-tcp"/>
+                            <constraint firstItem="Jrq-b2-uEc" firstAttribute="top" secondItem="N6m-Db-Y3J" secondAttribute="top" constant="16" id="Z9y-VB-QzB"/>
+                            <constraint firstItem="2DC-XD-RaR" firstAttribute="leading" secondItem="N6m-Db-Y3J" secondAttribute="leading" constant="12" id="o3A-RL-KKT"/>
+                            <constraint firstItem="dW8-2K-Qub" firstAttribute="centerX" secondItem="N6m-Db-Y3J" secondAttribute="centerX" id="sIY-pP-30W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Y6-ir-aqb"/>
+                    <connections>
+                        <outlet property="balanceAmount" destination="G8V-Hg-Y11" id="v6a-zy-0g1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITB-BW-DZd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="-673"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BigPayLogo" width="132" height="40"/>
+        <image name="IcNewCard" width="20" height="20"/>
+        <image name="IcPlus" width="24" height="24"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.0" green="0.51399999856948853" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryColor70">
+            <color red="0.14499999582767487" green="0.7369999885559082" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
